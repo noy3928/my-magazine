@@ -1,16 +1,40 @@
 .App {
   text-align: center;
 }
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./font/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "GmarketL";
+  src: url("./font/GmarketSansTTF/GmarketSansTTFLight.ttf");
+}
+
+@font-face {
+  font-family: "GmarketB";
+  src: url("./font/GmarketSansTTF/GmarketSansTTFBold.ttf");
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.fileupload {
+  display: none;
 }
 
 .App-header {
@@ -35,4 +59,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.login-button {
+}
+
+.login-button:after {
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  background: #fff;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-transition: all 0.55s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.55s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -1;
 }
